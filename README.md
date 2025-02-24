@@ -29,9 +29,12 @@ module "virtual_wan" {
   vnet_connections = {
     # Simple format - just VNet ID
     "conn-spoke1" = "/subscriptions/.../resourceGroups/spoke1-rg/providers/Microsoft.Network/virtualNetworks/spoke1-vnet"
+    "conn-spoke2" = "/subscriptions/.../resourceGroups/spoke2-rg/providers/Microsoft.Network/virtualNetworks/spoke2-vnet"
+    "conn-spoke3" = "/subscriptions/.../resourceGroups/spoke3-rg/providers/Microsoft.Network/virtualNetworks/spoke3-vnet"
+
     
     # Detailed format with additional parameters
-    "conn-spoke2" = {
+    "conn-spoke4" = {
       vnet_id = "/subscriptions/.../resourceGroups/spoke2-rg/providers/Microsoft.Network/virtualNetworks/spoke2-vnet"
       internet_security_enabled = true
     }
