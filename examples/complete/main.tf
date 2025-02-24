@@ -29,7 +29,7 @@ resource "azurerm_resource_group" "rg" {
 
 # Virtual WAN
 module "virtual_wan" {
-  source = "../../modules/azure-vwan"
+  source = "../../modules/azure-vwan-vnets"
 
   # Base Configuration
   location            = local.location
