@@ -34,8 +34,8 @@ module "virtual_wan" {
 
     
     # Detailed format with additional parameters
-    "conn-spokẽ" = {
-      vnet_id = "/subscriptions/.../resourceGroups/spokẽ-rg/providers/Microsoft.Network/virtualNetworks/spokẽ-vnet"
+    "conn-spoke4" = {
+      vnet_id = "/subscriptions/.../resourceGroups/spoke4-rg/providers/Microsoft.Network/virtualNetworks/spoke4-vnet"
       internet_security_enabled = true
     }
   }
